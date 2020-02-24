@@ -207,7 +207,7 @@
     }
 
     // Disable scrolling initially until the first pinch to fix issues with swiping on an initally zoomed in photo
-    self.scrollEnabled = NO;
+    self.scrollEnabled = YES;
 
     // Layout
     [self setNeedsLayout];

@@ -153,7 +153,7 @@
         if (ABS(boundsAR - imageAR) < 0.17) {
             zoomScale = MAX(xScale, yScale);
             // Ensure we don't zoom in or out too far, just in case
-            zoomScale = MIN(MAX(self.minimumZoomScale, zoomScale), self.maximumZoomScale);
+            zoomScale = MIN(MIN(self.minimumZoomScale, zoomScale), self.maximumZoomScale);
         }
     }
     return zoomScale;
